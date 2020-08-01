@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="./style/style.css" />
+<script src="./js/script.js" type="text/javascript"></script>
+</head>
+<body>
+	<header> <span>truYum</span> <img
+		src="./images/truyum-logo-light.png" /> <a id="menu"
+		href="menu-list-admin.html">Menu</a> </header>
+
+	<div class="content">
+		<h2>Edit Menu Items</h2>
+		<form name="editmenu" method="post"
+			action="edit-menu-item-status.html"
+			onSubmit="return Validate()">
+			<table>
+				<tr>
+					<td colspan="4"><label for="name">Name</label></td>
+				</tr>
+				<tr>
+					<td colspan="4"><input class="area" type="text" id="name"
+						name="txtname" value="Sandwich" size="80" /></td>
+				</tr>
+				<tr>
+					<td><label for="price">Price</label></td>
+					<td>Active</td>
+					<td><label for="dateoflaunch">Date of Launch</label></td>
+					<td><label for="cat">Category</label></td>
+
+				</tr>
+				<tr>
+					<td><input class="align-right" type="number" id="price"
+						name="price" value="97" /></td>
+					<td><input type="radio" name="active" value="yes" id="price" Checked>Yes
+						<input type="radio" name="active" value="no" id="price2">No
+					</td>
+					<td><input type="date" pattern="dd/MM/yyyy" value="27/04/2022" var="formatDate" />
+					</td>
+					<td><select name="category" id="cat">
+                                        <option selected>Choose</option>
+                                        <option value="Starters">Starters</option>
+                                        <option value="Main Course">Main Course</option>
+                                        <option value="Dessert">Dessert</option>
+                                        <option value="Drinks">Drinks</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type="checkbox" name="Checkbox"
+                        <input class="form-check-input" type="checkbox" id="freeDelivery" checked>
+						<label for="checkbox">Free Delivery</label></td>
+				</tr>
+				<tr>
+					<td colspan="2"><input class="button" type="submit" value="Save"
+						name="submit" onClick="validate" /></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+
+	<footer>
+	<h3>Copyright@2019</h3>
+	</footer>
+</body>
+</html>

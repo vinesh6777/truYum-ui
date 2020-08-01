@@ -1,0 +1,104 @@
+body {
+	height:100%;
+}
+
+header {
+  background: rgb(48, 84, 150);
+  height : 70px;
+  color : #ffffff;
+}
+.content {
+  height : 500px;
+  border: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+footer {
+	background-color: #dcdede;
+	height : 50px;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+img {
+	width: 50px;
+	height: 50px;
+	float: left;
+}
+#menu {
+	float: right;
+	margin-right: 10px;
+	margin-left:10px;
+	margin-top: 10px;
+	color: #ffffff;
+	
+}
+span {
+	margin-left: 10px;
+	margin-top: 10px;
+	float: left;
+	font-size: 18pt;
+}
+h2, table {
+	margin-left: 50px;
+}
+.align-left{
+	text-align: left;
+	width: 150px;
+}
+.align-right {
+	text-align: right;
+	width: 100px;
+}
+.align-center {
+	text-align: center;
+	width: 125px;
+}
+p {
+	text-align: left;
+	color: #42f57e;
+}
+#cart {
+	float: right;
+	margin-right: 10px;
+	margin-left: 5px;
+	margin-top: 10px;
+	color: #ffffff;
+}
+.button {
+	background-color: #2f6ecc;
+	color: #ffffff;
+	width: 150px;
+	height: 50px;
+}
+.font-color {
+	color: #16c955;
+	font-size: 18pt;
+	padding: 10px;
+	margin-left: 50px;
+}
+.centre {
+	padding: 10px;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+.notif {
+	color: #16c955;
+	font-size: 14pt;
+	text-align: center;
+	
+}
+.empty {
+	color: #9ea3a0;
+	font-size: 15pt;
+	margin-left: 50px;
+}
+.menu-item {
+	color: #08a0ff;
+}
+h4 {
+	font-size: 20pt;
+	margin-left: 50px;
+}

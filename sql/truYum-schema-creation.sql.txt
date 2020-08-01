@@ -1,0 +1,25 @@
+CREATE TABLE user (                         
+          user_id int(11) NOT NULL auto_increment,  
+          user_name varchar(50) NULL,       
+          PRIMARY KEY  (user_id)                    
+        );
+
+CREATE TABLE menu_item (                               
+             menu_id int(11) NOT NULL auto_increment,             
+             menu_name varchar(70) NULL,                  
+             menu_price decimal(9,2) NULL,                
+             menu_active varchar(3) NULL,                 
+             menu_dol date NULL,                          
+             menu_category varchar(50) NULL,              
+             menu_fd varchar(3) NULL,                     
+             PRIMARY KEY  (menu_id)                               
+           )
+
+CREATE TABLE cart (                                                                                                                  
+          cart_id int(11) NOT NULL auto_increment,                                                                                           
+          cart_user_id int(11) NULL,                                                                                                 
+          cart_product_id int(11) NULL,                                                                                              
+          PRIMARY KEY  (cart_id),                                                                                                            
+	  FOREIGN KEY (cart_user_id) REFERENCES user (user_id) ON DELETE NO ACTION ON UPDATE NO ACTION,         
+          FOREIGN KEY (cart_product_id) REFERENCES menu_item (menu_id) ON DELETE NO ACTION ON UPDATE NO ACTION  
+        );                                                                                                 
